@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Pendekar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #ffffff;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar .nav-link {
+      color: #333;
+    }
+    .sidebar .nav-link.active {
+      background-color: #e6f0e9;
+      font-weight: bold;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .card-summary {
+      border-left: 5px solid #198754;
+    }
+    .card-summary .card-body {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-lg-2 sidebar p-3">
+        <h4 class="text-success">Pendekar</h4>
+        <hr />
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house"></i> Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Penduduk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Aparat Desa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Daftar Surat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Daftar Permohonan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Riwayat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Akun</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pengguna</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Administrator</a></li>
+        </ul>
+      </div>
+      <div class="col-md-9 col-lg-10 content">
+        <h2>Dashboard</h2>
+        <div class="row g-4 mt-2">
+          <div class="col-md-3">
+            <div class="card card-summary">
+              <div class="card-body">
+                <strong>Penduduk</strong>
+                <div class="display-6">36</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-summary">
+              <div class="card-body">
+                <strong>Surat</strong>
+                <div class="display-6">3</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-summary">
+              <div class="card-body">
+                <strong>Permohonan</strong>
+                <div class="display-6">6</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-summary">
+              <div class="card-body">
+                <strong>Pending</strong>
+                <div class="display-6">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h5>Permohonan Surat Terbaru</h5>
+            <table class="table table-bordered">
+              <thead>
+                <tr><th>Jenis Surat</th><th>Pemohon</th><th>Tanggal</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Surat Izin Keramaian</td><td>Lina Agustina</td><td>16 Juli 2024</td></tr>
+                <tr><td>Surat Keterangan Beda Nama</td><td>Hendra Saputra</td><td>16 Juli 2024</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <h5>Surat Disetujui</h5>
+            <table class="table table-bordered">
+              <thead>
+                <tr><th>Jenis Surat</th><th>No. Surat</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Surat Keterangan Tidak Mampu</td><td>114/ABCDE/2024</td></tr>
+                <tr><td>Surat Keterangan Usaha</td><td>113/ABCDE/2024</td></tr>
+                <tr><td>Surat Keterangan Tidak Mampu</td><td>1/ABCD/2024</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

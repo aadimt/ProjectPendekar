@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+.sidebar {
+  width: 220px;
+  background: #198754;
+  color: white;
+  padding: 20px;
+}
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #157347;
+}
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #f8f9fa;
+}
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.lists {
+  display: flex;
+  gap: 20px;
+}
+.list {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
